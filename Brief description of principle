@@ -1,0 +1,14 @@
+ Goals: The circuit display section is divided into north-south and east-west traffic lights. When the north-south road is red, the east-west road
+ is green, and the lighting time is 30s. When the north-south road red light ends, the digital countdown starts to display on the digital
+ tube 10S. When the red light on the North and South Road is at the last 3s, the green light on the East and West Road will start to flash,
+ and will turn to the yellow light;When the 30s time is over, the green light on the east-west road turns to yellow, and the time is 5s. At
+ this time, the north-south road is still a red light;After 3.5s, the north-south road is green and the east-west road is red.The above 
+ process is continuously repeated afterwards. Improved part: set up east-west and north-south pedestrian buttons. When the pedestrian 
+ button is pressed, the red light turns to the green light after 3S, and the yellow light flashes for 3 seconds and turns red.
+ 
+ Program principle： Variable and port definition, main function content writing, implementation of the overall framework, calling 
+ sub-functions, delaying sub-function definitions, each call, about 10 microseconds delay, digital tube dynamic scan function, cycle scanning 8 digital tube 
+ displays, timer 0 Initialize function, assign initial value, timing 1ms, enable timer 0 interrupt enable, enable general interrupt, 
+ enable timer, timer 0 interrupt function, implement timer 1s, set external interrupt 0 sub-function, enable INT0 interrupt enable, 
+ enable general Interrupt, external interrupt 0 interrupt sub-function, set external interrupt 1 sub-function,open the interrupt enable
+ of INT0, open the general interrupt, external interrupt 1 interrupt function.
